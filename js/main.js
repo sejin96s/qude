@@ -139,4 +139,12 @@ window.onload = function() {
         }
     })
     .to('.logoWrap', { top: '20%', ease: 'none', duration: 5}, 0)
+
 }
+
+let rotate = document.querySelectorAll('.rotate');
+let opacity = document.querySelectorAll('.opacity')
+
+
+setTimeout(() => rotate.forEach(rotate => {rotate.classList.add('on')}),0);
+setTimeout(() => opacity.forEach(opacity => {opacity.classList.add('on')}),0);

@@ -47,7 +47,11 @@ header {
     .inner {
         padding: 25px 50px;
         .logo {
+            display: block;
             width: 97px;
+            svg {
+                width: 100%;
+            }
         }
         .gnb {
             .menuOpen {
@@ -647,5 +651,40 @@ footer {
             width: 100%;
             overflow: visible;
         }
+    }
+}
+
+.rotate.on {
+    animation-name: rotate;
+    animation-duration: 1.2s;
+}
+
+@keyframes rotate {
+    0% {
+        transform-origin: 0 0;
+        transform: translate(0px, 100%) rotate(20deg);
+        transition: 1s;
+    }
+    100% {
+        transform-origin: 0 0;
+        transform: translate(0px, 0px) rotate(0deg);
+        transition: 1s;
+    }
+}
+
+.opacity.on {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
